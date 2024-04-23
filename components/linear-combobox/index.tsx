@@ -168,7 +168,7 @@ export const LinearCombobox = () => {
 												className="mr-3 size-4 fill-muted-foreground group-hover:fill-primary"
 											/>
 										)}
-										<span className="text-xs">{index}</span>
+										{!isSearching && <span className="text-xs">{index}</span>}
 									</div>
 								</CommandItem>
 							))}
