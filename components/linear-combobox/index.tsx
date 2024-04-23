@@ -122,7 +122,17 @@ export const LinearCombobox = () => {
 				<Command className="rounded-lg">
 					<CommandInput
 						value={searchValue}
-						onValueChange={(searchValue) => setSearchValue(searchValue)}
+						onValueChange={(searchValue) => {
+							// If the user types a number, select the priority like useHotkeys
+							if ([0, 1, 2, 3, 4].includes(Number.parseInt(searchValue))) {
+								setSelectedPriority(priorities[Number.parseInt(searchValue)]);
+								setOpenTooltip(false);
+								setOpenPopover(false);
+								setSearchValue("");
+								return;
+							}
+							setSearchValue(searchValue);
+						}}
 						className="text-[0.8125rem] leading-normal"
 						placeholder="Set priority..."
 					>
