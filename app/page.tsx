@@ -32,6 +32,8 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="my-4 flex flex-col gap-4">
+				<h3 className="font-bold text-2xl">Example</h3>
+				<LinearCombobox />
 				<h3 className="font-bold text-2xl">Motivations</h3>
 				<p className="text-muted-foreground">
 					Linear has a beautiful combobox to set the priority of a task. I
@@ -57,9 +59,28 @@ export default function Home() {
 					<li>Hide kbd from input when doing a priority search</li>
 					<li>Tooltip on button hover</li>
 				</ul>
-				<div className="my-2">
-					<LinearCombobox />
-				</div>
+				<h3 className="font-bold text-2xl">Acknowledgments</h3>
+				<p className="text-muted-foreground">
+					Thanks to{" "}
+					<a
+						href="https://github.com/flipvh"
+						target="_blank"
+						className="text-primary underline"
+						rel="noreferrer"
+					>
+						@flipvh
+					</a>
+					, creator of{" "}
+					<a
+						href="https://cellajs.com/"
+						target="_blank"
+						className="text-primary underline"
+						rel="noreferrer"
+					>
+						Cella
+					</a>{" "}
+					for the idea of being able to recreate this component
+				</p>
 			</div>
 		</main>
 	);

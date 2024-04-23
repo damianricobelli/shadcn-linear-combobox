@@ -76,7 +76,7 @@ export const LinearCombobox = () => {
 							aria-label="Set priority"
 							variant="ghost"
 							size="sm"
-							className="px-2 h-8 text-[0.8125rem] leading-normal font-medium text-primary"
+							className="w-fit px-2 h-8 text-[0.8125rem] leading-normal font-medium text-primary"
 						>
 							{selectedPriority && selectedPriority.value !== "no-priority" ? (
 								<>
@@ -105,7 +105,8 @@ export const LinearCombobox = () => {
 				<TooltipContent
 					hideWhenDetached
 					side="bottom"
-					sideOffset={4}
+					align="start"
+					sideOffset={6}
 					className="flex items-center gap-2 bg-background border text-xs px-2 h-8"
 				>
 					<span className="text-primary">Change priority</span>
@@ -116,6 +117,7 @@ export const LinearCombobox = () => {
 				className="w-[206px] p-0 rounded-lg"
 				align="start"
 				onCloseAutoFocus={(e) => e.preventDefault()}
+				sideOffset={6}
 			>
 				<Command className="rounded-lg">
 					<CommandInput
@@ -138,8 +140,9 @@ export const LinearCombobox = () => {
 										);
 										setOpenTooltip(false);
 										setOpenPopover(false);
+										setSearchValue("");
 									}}
-									className="group rounded-md flex justify-between items-center w-full text-[0.8125rem] leading-normal text-muted-foreground"
+									className="group rounded-md flex justify-between items-center w-full text-[0.8125rem] leading-normal text-primary"
 								>
 									<div className="flex items-center">
 										<priority.icon
