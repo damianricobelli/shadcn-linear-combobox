@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Shadcn Linear",
 		description: "Copy of the Linear Priority component",
-		url: "https://shadcn-linear.vercel.app/",
+		url: "https://shadcn-linear-combobox.vercel.app/",
 	},
 };
 

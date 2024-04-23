@@ -21,7 +21,7 @@ export default function Home() {
 				<div className="flex gap-4 items-center">
 					<Button asChild>
 						<Link
-							href="https://github.com/damianricobelli/shadcn-linear"
+							href="https://github.com/damianricobelli/shadcn-linear-combobox"
 							target="_blank"
 						>
 							<Star className="mr-2 size-4" />
